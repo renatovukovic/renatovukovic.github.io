@@ -1,3 +1,7 @@
+This website now redirects to my new website: [renatovukovic.com](https://renatovukovic.com)
+
+Below is still the information about the old website template.
+
 Repo based on https://github.com/m-niemeyer/m-niemeyer.github.io
 
 Following is the READ.me of the repo this one is based on.

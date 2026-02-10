@@ -1,0 +1,191 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Section Styles */
+section {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+body.dark-mode h2 {
+    color: #f4f4f4;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode a {
+    color: #4da3ff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+body.dark-mode footer {
+    color: #aaa;
+}
+
+/* Publication and Talk Entries */
+.entry {
+    margin-bottom: 2em;
+}
+
+.entry .row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.entry .col-sm-3 {
+    flex: 0 0 120px;
+}
+
+.entry .col-sm-9 {
+    flex: 1;
+}
+
+.entry img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.btn-link {
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
